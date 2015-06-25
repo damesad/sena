@@ -1,0 +1,465 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#sesion {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#contenido1 {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#contenido2 {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#conten2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#contenido3 {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#contenido4 {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#sesion {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#contenido1 {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#contenido2 {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#conten2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#contenido3 {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#contenido4 {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 980px;
+	max-width: 980px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+        border-style: double;
+        border-color: #000;
+        background-color: #f0f0f0;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+        background-color: #fff;
+       margin-top: 20px;
+       border-style: solid ;
+        border-color: #ff8000;
+	display: block;
+}
+#header h1{
+    color:#3f0000;
+    text-align: center;
+}
+#header h2{
+    color:#3f0000;
+    text-align: center;
+}
+#nav {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+        margin-top: 15px;
+}
+#content {
+    color:#660000;
+        margin-top: 10px;
+        border-right: 1px solid black;
+        border-bottom : 1px solid black;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+        background-color: #f0f0e3;
+        border-radius: 10px;
+}
+#content h2{
+    text-align: center;
+}
+#content h3{
+    color:green;
+    text-align: center;
+    
+}
+#sesion {
+	clear: both;
+	float: left;
+	margin-left: 10.204%;
+	width: 79.5918%;
+	display: block;text-align: center;
+        margin-top: 10px;
+        background-color: #fff;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+        margin-top: 10px;
+        background-color: #fff;
+        text-align: center;
+        height: 50px;
+}
+#footer p{
+    margin-top:25px;;
+    color:gray;
+}
+#contenido1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 45.9795%;
+	display: block;
+}
+#contenido2 {
+	clear: none;
+	float: left;
+	margin-left: 4.0408%;
+	width: 45.9795%;
+	display: block;
+}
+#conten2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#contenido3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 27.5714%;
+	display: block;
+        
+    text-align: center;
+}
+#contenido3 button{
+    margin-top: 10px;
+}
+#contenido4 {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 66.3877%;
+	display: block;
+        border-left:1px solid black;
+}
+}
+.form-data{
+    width: 45%;clear: both;
+	float: left;
+	margin-left: 10px;;
+   
+    margin-top: 10px;
+}
+.form-data2{
+    width: 50%;
+    clear: none;
+	float: left;
+        margin-top: 10px;
+        margin-left: 2.0408%;
+    
+}
+#sesion31{
+    width: 35%;
+    height: 180px;
+    clear: both;
+	float: left;
+        margin-top: 10px;
+        margin-left: 2.0408%;
+        border-style: solid;border-color: #000;
+      
+}
+#sesion42{
+     width: 60%;
+     clear: none;
+     float: left;
+     margin-left: 2.0408%;
+    margin-top: 10px;
+}
+#sesion3{
+    width: 35%;
+    clear: both;
+	float: left;
+        margin-top: 10px;
+        margin-left: 2.0408%;
+      
+}
+#sesion4{
+     width: 58%;
+     clear: none;
+     float: left;
+     margin-left: 2.0408%;
+    margin-top: 10px;
+}
+
+.logo{
+    float:right;
+}
+#imagen_usu{
+    width: 180px;
+}
+#imagen_equ{
+    width: 180px;
+}
+.form-group{
+    width: 180px;
+    background-color: #fff;
+    color:#3f0000;
+    height: 30px;
+    border-radius: 5px;
+}
+.form-group:hover{
+    border-style: solid;
+    border-color: #ff8000;
+    background-color:#f0f0f0;
+}
+.btn{
+    color:#3f0000;
+    background-color: #dfffbf;
+    border-style: solid;
+    border-color: #204000;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 190px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.scr{
+    float: left;
+    text-align: left;
+}
+.btn-nav{
+    width: 180px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.btn-sec{width: 180px;
+    height: 50px;}
+#conten23{
+    margin-top: 10px;
+    width: 100%;
+    clear: both;
+    float: left;
+    margin-left: 15px;
+}
+#conten23b{
+    margin-top: 10px;
+    width: 100%;
+    clear: both;
+    float: left;
+    margin-left: 15px;
+    text-align:center;
+}
+table{
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#primera{
+    background: #bfffef;
+    text-align: center;
+    font-size: 16px;
+}
+table td{
+    width:150px;
+    height: 50px;
+   
+}
+table td h3{
+    margin-top: 20px;
+    text-align: center;
+    color:#660000;
+}
